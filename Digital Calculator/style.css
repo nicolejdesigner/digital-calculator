@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+/* quick reset so all our padding is the right size */
+* {
+    box-sizing: border-box;
+  }
+  
+  .calculator input {
+    font-family: 'Arial';
+    background: #EAFCFF;
+    border: #039EBD;
+  }
+
+  .calc-button   {
+    font-family: 'Arial';
+  }
+  
+  /* add some spacing */
+  body          {
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;  
+  }
+  
+  /* limit the width and center */
+  .calculator   {
+    max-width: 600px;
+    margin-left: 37px;
+    margin-top: 15px;
+    /* border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px; */
+  }
+  
+  .calculator input   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    padding: 20px 10px;
+    width: 100%;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+  }
+  
+  .calc-button  {
+    background: rgba(255, 255, 255); /* light background with opacity 50% */
+    border: 3px solid white; /* black border */
+    padding: 20px;
+    color: #341b5c; /* white text */
+    border-radius: 10px; /* rounded corners */
+    font-size: 23px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+    font-weight: bold;
+  }
+  
+  .calculator-buttons {
+    /* small spacing within our container */
+    padding: 15px 15px 15px 30px;
+  
+    /* the grid stuff! */
+    display: grid;
+  
+    /* create 4 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+    /* add the grid gap */
+    grid-gap: 20px;
+
+    filter: drop-shadow(0 0 0.11rem rgb(1, 1, 103));
+  }
+  
+  /* span across 3 columns */
+  .is-zero {
+    color: #1B515C;
+    grid-column: span 2;
+  }
+
+  .is-clear   {
+    grid-column: span 2;
+  }
+
+  .instructions {
+    background: white;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    line-height: 55px;
+    margin-left: 45px;
+    filter: drop-shadow(0 0 0.11rem rgb(1, 1, 103));
+    border-radius: 8%;
+  }
+  
+  .digital {
+    font-size: xxx-large;
+    padding-bottom: 4rem;
+    color: #341b5c;
+  }
+ 
+  p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #viewer {
+    text-align: right;
+    font-size: 50px;
+    filter: none !important;
+    color: #f1e4ff;
+  }
+
+  .col-6 {
+    width: 47%;
+  }
